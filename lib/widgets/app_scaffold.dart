@@ -21,7 +21,7 @@ class AppScaffold extends StatelessWidget {
       floatingActionButton: floatingActionButton,
       bottomNavigationBar: bottomNavigationBar,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 22),
         child: child,
       ),
     );

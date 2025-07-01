@@ -71,6 +71,9 @@ flutter:
         - asset: fonts/Oswald/Oswald-Regular.ttf
         - asset: fonts/Oswald/Oswald-Bold.ttf
           weight: 700
+    - family: OrderCoffee
+      fonts:
+        - asset: fonts/Icon/OrderCoffee.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

@@ -43,7 +43,13 @@ class AppTheme {
         bodyMedium: TextStyle(
           color: AppColors.kAppBlack,
           fontSize: 16,
-          fontFamily: "S",
+          fontFamily: "Sora",
+          fontWeight: FontWeight.w600,
+        ),
+        bodySmall: TextStyle(
+          color: AppColors.kAppSilver,
+          fontSize: 12,
+          fontFamily: "Sora",
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
