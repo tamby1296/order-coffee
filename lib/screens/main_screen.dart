@@ -16,7 +16,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
-  final List<Widget> widgetOptions = const [
+  final List<Widget> widgetOptions = [
     HomeScreen(),
     FavouriteScreen(),
     OrdersScreen(),
@@ -33,33 +33,54 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
-        child: BottomNavigationBar(
-          backgroundColor: Colors.white,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: AppColors.kAppClay,
-          currentIndex: _selectedIndex,
-          onTap: onNavigationTap,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(OrderCoffeeIcon.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(OrderCoffeeIcon.heart),
-              label: 'Favourite',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(OrderCoffeeIcon.bag),
-              label: 'Orders',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(OrderCoffeeIcon.notification),
-              label: 'Alerts',
-            ),
-          ],
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        child: BottomAppBar(
+          color: Colors.white,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(
+                icon: Icon(
+                  OrderCoffeeIcon.home,
+                  color:
+                      _selectedIndex == 0
+                          ? AppColors.kAppClay
+                          : AppColors.kAppGrey,
+                ),
+                onPressed: () => onNavigationTap(0),
+              ),
+              IconButton(
+                icon: Icon(
+                  OrderCoffeeIcon.heart,
+                  color:
+                      _selectedIndex == 1
+                          ? AppColors.kAppClay
+                          : AppColors.kAppGrey,
+                ),
+                onPressed: () => onNavigationTap(1),
+              ),
+              IconButton(
+                icon: Icon(
+                  OrderCoffeeIcon.bag,
+                  color:
+                      _selectedIndex == 2
+                          ? AppColors.kAppClay
+                          : AppColors.kAppGrey,
+                ),
+                onPressed: () => onNavigationTap(2),
+              ),
+              IconButton(
+                icon: Icon(
+                  OrderCoffeeIcon.notification,
+                  color:
+                      _selectedIndex == 3
+                          ? AppColors.kAppClay
+                          : AppColors.kAppGrey,
+                ),
+                onPressed: () => onNavigationTap(3),
+              ),
+            ],
+          ),
         ),
       ),
       body: widgetOptions.elementAt(_selectedIndex),
