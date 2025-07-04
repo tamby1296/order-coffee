@@ -46,11 +46,10 @@ class CoffeeCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    '\$ ${details.price}',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    '\$ ${details.formattedPrice}',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodyMedium?.copyWith(fontSize: 18),
                   ),
                   Container(
                     decoration: BoxDecoration(

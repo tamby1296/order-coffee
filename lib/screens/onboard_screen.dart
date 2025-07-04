@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:test/screens/main_screen.dart';
 
 class OnboardScreen extends StatelessWidget {
   const OnboardScreen({super.key});
 
-  void onGetStarted() {}
+  void onGetStarted(BuildContext ctx) {
+    Navigator.push(ctx, MaterialPageRoute(builder: (ctx) => MainScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +43,7 @@ class OnboardScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 40),
                   ElevatedButton(
-                    onPressed: onGetStarted,
+                    onPressed: () => onGetStarted(context),
                     child: Text(
                       'Get Started',
                       style: Theme.of(context).textTheme.headlineMedium,

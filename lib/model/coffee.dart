@@ -14,6 +14,10 @@ class Coffee {
     required this.price,
     required this.rating,
   });
+
+  String get formattedPrice {
+    return price.toStringAsFixed(2);
+  }
 }
 
 enum Category { foam, espresso, latte }

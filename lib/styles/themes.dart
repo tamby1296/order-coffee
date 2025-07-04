@@ -31,7 +31,7 @@ class AppTheme {
           color: AppColors.kAppIvory,
           fontSize: 16,
           fontFamily: "Sora",
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.bold,
           height: 1.5,
         ),
         headlineSmall: TextStyle(
@@ -44,10 +44,10 @@ class AppTheme {
           color: AppColors.kAppBlack,
           fontSize: 16,
           fontFamily: "Sora",
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.bold,
         ),
         bodySmall: TextStyle(
-          color: AppColors.kAppSilver,
+          color: AppColors.kAppGrey,
           fontSize: 12,
           fontFamily: "Sora",
         ),

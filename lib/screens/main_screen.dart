@@ -32,54 +32,67 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-        child: BottomAppBar(
-          color: Colors.white,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(
-                  OrderCoffeeIcon.home,
-                  color:
-                      _selectedIndex == 0
-                          ? AppColors.kAppClay
-                          : AppColors.kAppGrey,
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.kAppBlack.withValues(alpha: 0.2),
+              spreadRadius: 1,
+              blurRadius: 8,
+              offset: Offset(0, -2),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          child: BottomAppBar(
+            color: Colors.white,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  icon: Icon(
+                    OrderCoffeeIcon.home,
+                    color:
+                        _selectedIndex == 0
+                            ? AppColors.kAppClay
+                            : AppColors.kAppGrey,
+                  ),
+                  onPressed: () => onNavigationTap(0),
                 ),
-                onPressed: () => onNavigationTap(0),
-              ),
-              IconButton(
-                icon: Icon(
-                  OrderCoffeeIcon.heart,
-                  color:
-                      _selectedIndex == 1
-                          ? AppColors.kAppClay
-                          : AppColors.kAppGrey,
+                IconButton(
+                  icon: Icon(
+                    OrderCoffeeIcon.heart,
+                    color:
+                        _selectedIndex == 1
+                            ? AppColors.kAppClay
+                            : AppColors.kAppGrey,
+                  ),
+                  onPressed: () => onNavigationTap(1),
                 ),
-                onPressed: () => onNavigationTap(1),
-              ),
-              IconButton(
-                icon: Icon(
-                  OrderCoffeeIcon.bag,
-                  color:
-                      _selectedIndex == 2
-                          ? AppColors.kAppClay
-                          : AppColors.kAppGrey,
+                IconButton(
+                  icon: Icon(
+                    OrderCoffeeIcon.bag,
+                    color:
+                        _selectedIndex == 2
+                            ? AppColors.kAppClay
+                            : AppColors.kAppGrey,
+                  ),
+                  onPressed: () => onNavigationTap(2),
                 ),
-                onPressed: () => onNavigationTap(2),
-              ),
-              IconButton(
-                icon: Icon(
-                  OrderCoffeeIcon.notification,
-                  color:
-                      _selectedIndex == 3
-                          ? AppColors.kAppClay
-                          : AppColors.kAppGrey,
+                IconButton(
+                  icon: Icon(
+                    OrderCoffeeIcon.notification,
+                    color:
+                        _selectedIndex == 3
+                            ? AppColors.kAppClay
+                            : AppColors.kAppGrey,
+                  ),
+                  onPressed: () => onNavigationTap(3),
                 ),
-                onPressed: () => onNavigationTap(3),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
