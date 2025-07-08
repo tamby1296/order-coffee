@@ -23,7 +23,7 @@ class SizeSelector extends StatelessWidget {
           backgroundColor: isActive ? Color(0xffF9F2ED) : Colors.white,
           side: BorderSide(
             color: isActive ? AppColors.kAppClay : AppColors.kAppSilver,
-            width: 2,
+            width: 1.35,
           ),
         ),
         onPressed: onPressed,

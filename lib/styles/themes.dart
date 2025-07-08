@@ -49,7 +49,7 @@ class AppTheme {
         ),
         bodySmall: TextStyle(
           color: AppColors.kAppGrey,
-          fontSize: 12,
+          fontSize: 16,
           fontFamily: "Sora",
         ),
       ),

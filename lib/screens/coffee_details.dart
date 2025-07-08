@@ -180,20 +180,23 @@ class _CoffeeDetailsState extends State<CoffeeDetails> {
                   ),
                   ReadMoreText(
                     widget.details.desc,
-                    textAlign: TextAlign.left,
                     trimMode: TrimMode.Line,
-                    trimLines: 2,
-                    colorClickableText: AppColors.kAppClay,
-                    trimCollapsedText: 'Show more',
-                    trimExpandedText: 'Show less',
+                    trimLines: 3,
+                    trimCollapsedText: ' Read More',
+                    trimExpandedText: ' Show Less',
                     moreStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      fontSize: 14,
-                      height: 1.6,
                       fontWeight: FontWeight.bold,
+                      color: AppColors.kAppClay,
                     ),
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodySmall?.copyWith(fontSize: 14, height: 1.6),
+                    lessStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.kAppClay,
+                    ),
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.normal,
+                      color: AppColors.kAppGrey,
+                    ),
                   ),
                   SizedBox(height: 10),
                   Text(
