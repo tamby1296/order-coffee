@@ -6,73 +6,93 @@ class OrderCoffeeIcon {
   static const _kFontFam = 'OrderCoffee';
   static const String? _kFontPkg = null;
 
-  static const IconData chevronRight = IconData(
+  static const IconData heart = IconData(
     0xe800,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData chevronUp = IconData(
+  static const IconData home = IconData(
     0xe801,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData discount = IconData(
+  static const IconData milk = IconData(
     0xe802,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData heart = IconData(
+  static const IconData more = IconData(
     0xe803,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData home = IconData(
+  static const IconData notification = IconData(
     0xe804,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData more = IconData(
+  static const IconData phone = IconData(
     0xe805,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData notification = IconData(
+  static const IconData search = IconData(
     0xe806,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData phone = IconData(
+  static const IconData settings = IconData(
     0xe807,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData search = IconData(
+  static const IconData star = IconData(
     0xe808,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData settings = IconData(
+  static const IconData rating = IconData(
     0xe809,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData star = IconData(
+  static const IconData bag = IconData(
     0xe80a,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData bag = IconData(
+  static const IconData bean = IconData(
     0xe80b,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData chevronDown = IconData(
+  static const IconData bike = IconData(
     0xe80c,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData chevronLeft = IconData(
+  static const IconData chevronDown = IconData(
     0xe80d,
+    fontFamily: _kFontFam,
+    fontPackage: _kFontPkg,
+  );
+  static const IconData chevronLeft = IconData(
+    0xe80e,
+    fontFamily: _kFontFam,
+    fontPackage: _kFontPkg,
+  );
+  static const IconData chevronRight = IconData(
+    0xe80f,
+    fontFamily: _kFontFam,
+    fontPackage: _kFontPkg,
+  );
+  static const IconData chevronUp = IconData(
+    0xe810,
+    fontFamily: _kFontFam,
+    fontPackage: _kFontPkg,
+  );
+  static const IconData discount = IconData(
+    0xe811,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );

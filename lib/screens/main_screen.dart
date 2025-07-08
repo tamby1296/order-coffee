@@ -47,7 +47,6 @@ class _MainScreenState extends State<MainScreen> {
         child: ClipRRect(
           borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
           child: BottomAppBar(
-            color: Colors.white,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

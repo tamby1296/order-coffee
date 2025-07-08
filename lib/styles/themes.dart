@@ -4,7 +4,7 @@ import 'package:test/styles/colors.dart';
 class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
-      scaffoldBackgroundColor: AppColors.kAppIvory,
+      scaffoldBackgroundColor: AppColors.kAppLightClay,
       primaryColor: AppColors.kAppClay,
       colorScheme: ColorScheme.light(
         primary: AppColors.kAppClay,
@@ -14,9 +14,10 @@ class AppTheme {
         onSecondary: AppColors.kAppBlack,
         onSurface: AppColors.kAppBlack,
       ),
+      bottomAppBarTheme: BottomAppBarTheme(color: Colors.white),
       appBarTheme: AppBarTheme(
-        backgroundColor: AppColors.kAppClay,
-        foregroundColor: Colors.white,
+        backgroundColor: AppColors.kAppLightClay,
+        foregroundColor: AppColors.kAppBlack,
         elevation: 0,
       ),
       textTheme: const TextTheme(
@@ -61,6 +62,17 @@ class AppTheme {
             borderRadius: BorderRadius.circular(14),
           ),
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+          ),
+          side: BorderSide(color: AppColors.kAppSilver),
+          textStyle: TextStyle(fontSize: 14),
         ),
       ),
     );

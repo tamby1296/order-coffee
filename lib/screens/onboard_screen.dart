@@ -18,7 +18,7 @@ class OnboardScreen extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                  'assets/images/background/onboard-screen.jpg',
+                  'assets/images/background/onboard-screen.png',
                 ),
                 fit: BoxFit.contain,
               ),

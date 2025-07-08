@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const kAppClay = Color(0xffC67C4E);
+  static const kAppLightClay = Color(0xffF9F9F9);
   static const kAppSand = Color(0xffEDD6C8);
   static const kAppBlack = Color(0xff313131);
   static const kAppGrey = Color(0xffA2A2A2);
